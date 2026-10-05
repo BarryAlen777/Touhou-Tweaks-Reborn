@@ -1,0 +1,37 @@
+{
+    "thtplayerdead": {
+        "category": "master",
+        "subtitle": "touhoutweaks.sound.thtplayerdead",
+        "sounds": [
+            "touhoutweaks:sounddead"
+        ]
+    },
+    "thtpause": {
+        "category": "master",
+        "subtitle": "touhoutweaks.sound.thtpause",
+        "sounds": [
+            "touhoutweaks:soundpause"
+        ]
+    },
+    "thtscreenshot": {
+        "category": "master",
+        "subtitle": "touhoutweaks.sound.thtscreenshot",
+        "sounds": [
+            "touhoutweaks:soundscreenshot"
+        ]
+    },
+    "thtlevitation": {
+        "category": "master",
+        "subtitle": "touhoutweaks.sound.thtlevitation",
+        "sounds": [
+            "touhoutweaks:soundlevitation"
+        ]
+    },
+    "thtstrength": {
+        "category": "master",
+        "subtitle": "touhoutweaks.sound.thtstrength",
+        "sounds": [
+            "touhoutweaks:soundstrength"
+        ]
+    }
+}

@@ -1,0 +1,30 @@
+plugins { id 'java'; id 'net.minecraftforge.gradle' version '[6.0,6.2)' }
+version = '1.4.0-r1'
+group = 'io.github.h2sxxa'
+base { archivesName = 'touhoutweaks' }
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+minecraft { mappings channel: 'official', version: '1.20.1' }
+dependencies { minecraft 'net.minecraftforge:forge:1.20.1-47.4.0' }
+tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+processResources {
+    def props = [mod_id: 'touhoutweaks', mod_name: 'TouhouTweaks', mod_version: project.version,
+                 minecraft_version: '1.20.1', forge_version: '47.4.0']
+    inputs.properties props
+    filteringCharset = 'UTF-8'
+    filesMatching('META-INF/mods.toml') { expand props }
+}
+jar {
+    manifest {
+        attributes([
+            'Specification-Title'     : 'touhoutweaks',
+            'Implementation-Title'    : 'TouhouTweaks',
+            'Implementation-Version'  : project.version,
+            'Implementation-URL'      : 'https://github.com/H2Sxxa/TouhouTweaks',
+            'Attribution'             : 'Original author H2Sxxa - https://github.com/H2Sxxa/TouhouTweaks (GPL-3.0-only)',
+            'License'                 : 'GPL-3.0-only'
+        ])
+    }
+    from('LICENSE') { into 'META-INF'; rename { 'LICENSE.txt' } }
+    from('NOTICE.md') { into 'META-INF' }
+}
+jar.finalizedBy('reobfJar')
