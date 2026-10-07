@@ -22,4 +22,4 @@
 - Java 21
 - Gradle 8+
 
-构建产物为 `build/libs/touhoutweaks-1.4.0-r2.jar`，放入 NeoForge 1.21.1 的 `mods` 文件夹即可。
+构建产物为 `build/libs/touhoutweaks-1.5.0.jar`，放入 NeoForge 1.21.1 的 `mods` 文件夹即可。
