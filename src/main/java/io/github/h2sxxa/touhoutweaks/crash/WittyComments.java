@@ -9,8 +9,8 @@ import java.util.Arrays;
  *
  * 原版在 CrashReport.getWittyComment 的 RETURN 处注入，把原版彩蛋列表
  * 与模组彩蛋列表合并后按 System.nanoTime() 取模随机一条。
- * 1.20.1 的该方法为 private static 且字符串硬编码在方法体内，无法同样注入；
- * 改走 Forge 官方扩展点 CrashReportCallables.registerCrashCallable
+ * NeoForge 1.21.1 的该方法为 private static 且字符串硬编码在方法体内，无法同样注入；
+ * 改走 NeoForge 官方扩展点 CrashReportCallables.registerCrashCallable
  * （由模组入口在构造时注册，本端崩溃报告的 System Details 中会多出一条随机彩蛋，
  * 与原版共用同一个取模随机逻辑与同样的"取不到就返回 Witty comment unavailable :("兜底）。
  */

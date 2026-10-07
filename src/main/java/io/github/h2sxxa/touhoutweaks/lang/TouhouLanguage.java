@@ -13,7 +13,7 @@ import net.minecraft.util.FormattedCharSequence;
  * 翻译重定向（对应原版 MixinI18n）。
  *
  * 原版在 I18n.format 处重定向：任何翻译键 K，若存在 touhoutweaks.K 条目，就用它。
- * 1.20.1 不再需要 Mixin：net.minecraft.locale.Language 提供了公开的
+ * NeoForge 1.21.1 不再需要 Mixin：net.minecraft.locale.Language 提供了公开的
  * getInstance()/inject()，这里注入一个包装实现，查找时先试 "touhoutweaks." + key，
  * 找不到再回落到原语言映射，语义与原版逐字一致。
  *
@@ -23,7 +23,7 @@ import net.minecraft.util.FormattedCharSequence;
  *
  * 实际展示的替换由语言文件里的条目决定：
  * touhoutweaks.progress.working / connect.connecting / connect.joining
- * 均为"少女祈祷中……"（1.20.1 加载/加入界面显示的正是这些键；
+ * 均为"少女祈祷中……"（1.21.1 加载/加入界面显示的正是这些键；
  * 1.12.2 的 menu.loadingLevel 条目也保留，行为对齐）。
  */
 public final class TouhouLanguage extends Language {

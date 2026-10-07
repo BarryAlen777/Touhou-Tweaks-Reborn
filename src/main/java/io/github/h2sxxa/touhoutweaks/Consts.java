@@ -5,7 +5,7 @@ package io.github.h2sxxa.touhoutweaks;
  * https://github.com/H2Sxxa/TouhouTweaks ），modid 与包名保持原样。
  *
  * 原 1.12.2 版本这里的 DEPENDENCIES 要求 mixinbooter 前置、REMAP/DONT_REMAP
- * 服务于 Mixin 注入；1.20.1 移植版不再使用 Mixin（全部改走 Forge 事件与官方扩展点），
+ * 服务于 Mixin 注入；NeoForge 1.21.1 移植版不再使用 Mixin（全部改走事件与官方扩展点），
  * 因此相应字段移除，见 NOTICE.md 的移植变更记录。
  */
 public class Consts {

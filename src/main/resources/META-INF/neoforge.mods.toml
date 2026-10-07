@@ -1,0 +1,36 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="GPL-3.0-only"
+issueTrackerURL="https://github.com/H2Sxxa/TouhouTweaks/issues"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+authors="H2Sxxa"
+credits="Team Shanghai Alice, LunarCapitalFramework; NeoForge 1.21.1 port, GPL-3.0"
+displayURL="https://github.com/H2Sxxa/TouhouTweaks"
+description='''
+一个让 MC 拥有更多车万要素的 mod（TouhouTweaks 的 NeoForge 1.21.1 移植版）。
+
+暂停游戏、玩家死亡、获得漂浮/力量效果、F2 截图时播放音效；
+世界加载显示“少女祈祷中……”；崩溃报告加入车万风 Witty Comment。
+
+原作者：H2Sxxa（署名保持不变）
+原开源地址：https://github.com/H2Sxxa/TouhouTweaks
+许可证：GPL-3.0-only（保持不变）
+'''
+
+[[dependencies.${mod_id}]]
+modId="neoforge"
+mandatory=true
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.${mod_id}]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.21.1]"
+ordering="NONE"
+side="BOTH"
